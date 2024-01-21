@@ -1,7 +1,5 @@
 import { RayniaI } from "./RayniaInterface";
 
-// weightG
-
 export function rayniaPhysical(data: RayniaI): {
     physical: {
         easyToReadScore: number;
@@ -16,7 +14,7 @@ export function rayniaPhysical(data: RayniaI): {
 
     let easyToPackScore: number = (surfaceCm[0] < 14.3 ? 1 : surfaceCm[0] === 14.3 ? 0.7 : 0.35)
         + (surfaceCm[1] < 21 ? 1 : surfaceCm[1] === 21 ? 0.7 : 0.35)
-        // + weightG
+        + (weightG < 100 ? 1: weightG < 450 ? 0.75: weightG < 600 ? 0.25 : 0)
         + (deepCm < 1.5 ? 1 : deepCm === 1.5 ? 0.6 : deepCm < 4 ? 0.3 : 0)
         + (durability.binding.glue ? 0.25 : 0)
         + (durability.binding.threadSewing ? 0.25 : 0)

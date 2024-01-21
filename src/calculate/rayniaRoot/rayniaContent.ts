@@ -23,7 +23,7 @@ export function rayniaContent(data: RayniaI): {
         let deptScore: number = ((dept.length / 5) * 2) + ((dept.explain / 5) * 1.5) + (dept.example / 5) + ((dept.technic / 5) * 0.5);
 
         // complete
-        let completeScore: number = 0; ////////////////////////
+        let completeScore: number = complete + 5 <= 0 ? 0: complete + 5 >= 10 ? 10: complete + 5; ////////////////////////
 
 
         // explainTypes

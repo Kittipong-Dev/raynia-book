@@ -29,7 +29,7 @@ export function rayniaCal (data: RayniaI): RayniaedI {
 //             explain: 0,
 //             example: 4
 //         },
-//         complete: 0,
+//         complete: 0, // 0 is ครบ - is ขาด + is เกิน
 //         explainTypes: [
 //             {name: "T", value: 23},
 //             {name: "D", value: 5},
@@ -50,8 +50,8 @@ export function rayniaCal (data: RayniaI): RayniaedI {
 //             analyzeHardness: 5,
 //             technicalTermDifficulty: 5,
 //         },
-//         answer: 3
-//     }, // 3 2 1 0 (3 is explain every choice)
+//         answer: 3 // 3 2 1 0 (3 is explain every choice)
+//     }, 
 //     physical: {
 //         easyToUse: {
 //             easyToPack: {
