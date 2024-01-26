@@ -4,16 +4,41 @@ import { DataTypes } from "sequelize";
 export const Book = sequelize.define(
     "Books",
     {
-        id: {
+        bookId: {
             type: DataTypes.INTEGER,
             autoIncrement: true,
             primaryKey: true
         },
-        name: DataTypes.STRING,
-        author: DataTypes.STRING,
-        price: DataTypes.FLOAT,
-        tag: DataTypes.ARRAY,
-        image: DataTypes.ARRAY
+        dataId: {
+        },
+        name: {
+            type: DataTypes.STRING,
+            allowNull: false
+        },
+        author: {
+            type: DataTypes.STRING,
+            allowNull: false
+        },
+        price: {
+            type: DataTypes.FLOAT,
+            allowNull: false
+        },
+        tag: {
+            type: DataTypes.ARRAY,
+            allowNull: false
+        },
+        image: {
+            type: DataTypes.ARRAY,
+            allowNull: false
+        },
+        requirement: {
+            type: DataTypes.STRING,
+            allowNull: false
+        },
+        description: {
+            type: DataTypes.TEXT,
+            allowNull: false
+        }
     },
     {paranoid: true}
 )
