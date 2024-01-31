@@ -17,10 +17,6 @@ export const Book = sequelize.define(
             type: DataTypes.FLOAT,
             allowNull: false
         },
-        requirement: {
-            type: DataTypes.STRING,
-            allowNull: false
-        },
         description: {
             type: DataTypes.TEXT,
             allowNull: false
