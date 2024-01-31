@@ -85,3 +85,42 @@ export function rayniaCal (data: RayniaI): RayniaedI {
 // }
 
 // console.log(`res:`, rayniaCal(temp))
+
+
+// {
+        
+//     technic: 0,
+//     length: 2,
+//     explain: 0,
+//     example: 4,
+//     complete: 0, // 0 is ครบ - is ขาด + is เกิน
+//     explainTypes: [
+//                 {name: "T", value: 23},
+//                 {name: "D", value: 5},
+//                 {name: "P", value: 55}
+//     ],
+//     analyze: true,
+//     applied: true,
+//     knowledgeTest: true,
+//     complexNumber: 5,
+//     step: 5,
+//     analyzeHardness: 5,
+//     technicalTermDifficulty: 5,
+//     answer: 3, // 3 2 1 0 (3 is explain every choice)
+//     surfaceCm: [100, 20], //width height
+//     weightG: 800,
+//     deepCm: 12,
+//     threadSewing: true,
+//     glue: true
+//     gram: 200,
+//     cover: 23
+//     flexibleRidge: true,
+//     fontTyped: true,
+//     fontSize: 12,
+//     eyeCare: true,
+//     blackWhite: true,
+//     oneCharLineSpacing: true,
+// }
+
+
+// fix everything in calculation and the database model of books

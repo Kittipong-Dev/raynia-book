@@ -1,13 +1,17 @@
-import { sequelize } from "../database";
+import { sequelize } from "../../database";
 import { DataTypes } from "sequelize";
+import { Book } from "./Book";
 
 export const BookData = sequelize.define(
     "BookDatas",
     {
-        dataId: {
+        bookId: {
             type: DataTypes.INTEGER,
-            autoIncrement: true,
-            primaryKey: true
+            primaryKey: true,
+            references: {
+                model: Book,
+                key: 'bookId'
+            }
         },
         technic: {
             type: DataTypes.INTEGER,
@@ -41,21 +45,21 @@ export const BookData = sequelize.define(
             type: DataTypes.INTEGER
         },
         T: {
-            type: DataTypes.INTEGER,
+            type: DataTypes.FLOAT,
             validate: {
                 min: 0,
                 max: 100
             }
         },
         D: {
-            type: DataTypes.INTEGER,
+            type: DataTypes.FLOAT,
             validate: {
                 min: 0,
                 max: 100
             }
         },
         P: {
-            type: DataTypes.INTEGER,
+            type: DataTypes.FLOAT,
             validate: {
                 min: 0,
                 max: 100
@@ -100,15 +104,15 @@ export const BookData = sequelize.define(
             }
         },
         surfaceCmW: {
-            type: DataTypes.INTEGER,
+            type: DataTypes.FLOAT,
             allowNull: false
         },
         surfaceCmH: {
-            type: DataTypes.INTEGER,
+            type: DataTypes.FLOAT,
             allowNull: false
         },
         weightG: {
-            type: DataTypes.INTEGER,
+            type: DataTypes.FLOAT,
             allowNull: false
         },
         threadSewing: {
@@ -136,7 +140,7 @@ export const BookData = sequelize.define(
             allowNull: false
         },
         fontSize: {
-            type: DataTypes.INTEGER,
+            type: DataTypes.FLOAT,
             allowNull: false
         },
         eyeCare: {

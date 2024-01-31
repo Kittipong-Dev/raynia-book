@@ -1,17 +1,15 @@
 import express, { json, urlencoded } from 'express';
 import config from './config';
-import { dbConnect } from './db/database';
-import { User } from './db/models/User';
 import books from './routers/books';
 import accounts from './routers/accounts';
+import { initDB } from './db/initDB';
 
 async function main(): Promise<void> {
     const app = express();
     const port = config.app.port;
     const host = config.app.host;
 
-    await dbConnect();
-    await User.sync();
+    await initDB();
 
     app.use(json())
     app.use(urlencoded({ extended: true}))

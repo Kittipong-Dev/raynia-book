@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { User } from '../db/models/User';
+import { User } from '../db/models/User/User';
 import { ValidationError as SequelizeValidationError, Op} from 'sequelize';
 
 const signUp = async (req: Request, res: Response) => {

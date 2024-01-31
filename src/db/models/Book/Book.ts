@@ -1,4 +1,4 @@
-import { sequelize } from "../database";
+import { sequelize } from "../../database";
 import { DataTypes } from "sequelize";
 
 export const Book = sequelize.define(
@@ -9,26 +9,12 @@ export const Book = sequelize.define(
             autoIncrement: true,
             primaryKey: true
         },
-        dataId: {
-        },
         name: {
-            type: DataTypes.STRING,
-            allowNull: false
-        },
-        author: {
             type: DataTypes.STRING,
             allowNull: false
         },
         price: {
             type: DataTypes.FLOAT,
-            allowNull: false
-        },
-        tag: {
-            type: DataTypes.ARRAY,
-            allowNull: false
-        },
-        image: {
-            type: DataTypes.ARRAY,
             allowNull: false
         },
         requirement: {
