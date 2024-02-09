@@ -10,7 +10,7 @@ export function dbConnect(): Promise<void> {
     return sequelize.authenticate().then((): void => {
         console.log("Database Authorized")
     }).catch((error): void => {
-        console.error("Database Falied", error)
+        console.error("Database Falied: ", error)
         process.exit(1)
     })
 }

@@ -1,11 +1,11 @@
 import {sequelize} from "../../database";
 import {DataTypes} from "sequelize";
 
-export const BookType = sequelize.define(
-    "BookTypes",
+export const BookSubject = sequelize.define(
+    "BookSubjects",
     {
-        typeName: {
-            type: DataTypes.ENUM("เนื้อหา", "โจทย์"),
+        subjectName: {
+            type: DataTypes.ENUM(),
             unique: true,
             allowNull: true
         }

@@ -3,11 +3,14 @@ import { DataTypes } from "sequelize";
 import { Book } from "./Book";
 
 export const BookData = sequelize.define(
-    "BookDatas",
+    "BooksData",
     {
+        dataId: {
+            type: DataTypes.INTEGER,
+            primaryKey: true
+        },
         bookId: {
             type: DataTypes.INTEGER,
-            primaryKey: true,
             references: {
                 model: Book,
                 key: 'bookId'
@@ -112,6 +115,10 @@ export const BookData = sequelize.define(
             allowNull: false
         },
         weightG: {
+            type: DataTypes.FLOAT,
+            allowNull: false
+        },
+        deepCm: {
             type: DataTypes.FLOAT,
             allowNull: false
         },

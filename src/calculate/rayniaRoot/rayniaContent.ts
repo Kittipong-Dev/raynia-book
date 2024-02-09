@@ -5,35 +5,22 @@ import { RayniaI } from "./RayniaInterface";
 export function rayniaContent(data: RayniaI): {
     completeScore: number;
     deptScore: number;
-    explainTypes: [{
-        name: "T";
-        value: number;
-    }, {
-        name: "D";
-        value: number;
-    }, {
-        name: "P";
-        value: number;
-    }];
+    contentQuadrant: number;
 } | undefined {
-    if (data.content) {
-        const { dept, complete, explainTypes } = data.content;
-
+    if (data.length !== undefined && data.complete !== undefined && data.explain !== undefined && data.example !== undefined && data.technic !== undefined) {
         // dept
-        let deptScore: number = ((dept.length / 5) * 2) + ((dept.explain / 5) * 1.5) + (dept.example / 5) + ((dept.technic / 5) * 0.5);
+        let deptScore: number = ((data.length / 5) * 1) + ((data.explain / 5) * 3) + ((data.example / 5) * 4) + ((data.technic / 5) * 2);
 
         // complete
-        let completeScore: number = complete + 5 <= 0 ? 0: complete + 5 >= 10 ? 10: complete + 5; ////////////////////////
+        let completeScore: number = data.complete;
 
-
-        // explainTypes
-        let sortedExplain = explainTypes.sort((a, b) => b.value - a.value); // wait
-        console.log(sortedExplain); // wait
+        // quadrant
+        let contentQuadrant: number = deptScore > 5 ? completeScore > 5 ? 1: 2 : completeScore > 5 ? 4: 3
 
         return {
             completeScore: completeScore,
             deptScore: deptScore,
-            explainTypes: sortedExplain
+            contentQuadrant: contentQuadrant,
         };
     }
 }

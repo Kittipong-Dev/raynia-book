@@ -4,7 +4,7 @@ import { ValidationError as SequelizeValidationError, Op} from 'sequelize';
 
 const signUp = async (req: Request, res: Response) => {
     try {
-        await User.create(req.body);
+        const user = await User.create(req.body); // field
         res.status(200)
             .json({
                 message: "sign up successful",

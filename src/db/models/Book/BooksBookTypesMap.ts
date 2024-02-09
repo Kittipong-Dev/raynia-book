@@ -15,7 +15,7 @@ export const BooksBookTypesMap = sequelize.define(
             },
         },
         typeName: {
-            type: DataTypes.STRING,
+            type: DataTypes.ENUM("เนื้อหา", "โจทย์", "เนื้อหา-โจทย์"),
             primaryKey: true,
             references: {
                 model: BookType,
