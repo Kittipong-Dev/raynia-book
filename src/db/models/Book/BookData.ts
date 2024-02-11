@@ -7,7 +7,8 @@ export const BookData = sequelize.define(
     {
         dataId: {
             type: DataTypes.INTEGER,
-            primaryKey: true
+            primaryKey: true,
+            autoIncrement: true 
         },
         bookId: {
             type: DataTypes.INTEGER,
@@ -108,59 +109,45 @@ export const BookData = sequelize.define(
         },
         surfaceCmW: {
             type: DataTypes.FLOAT,
-            allowNull: false
         },
         surfaceCmH: {
             type: DataTypes.FLOAT,
-            allowNull: false
         },
         weightG: {
             type: DataTypes.FLOAT,
-            allowNull: false
         },
         deepCm: {
             type: DataTypes.FLOAT,
-            allowNull: false
         },
         threadSewing: {
             type: DataTypes.BOOLEAN,
-            allowNull: false
         },
         glue: {
             type: DataTypes.BOOLEAN,
-            allowNull: false
         },
         gram: {
             type: DataTypes.INTEGER,
-            allowNull: false
         },
         cover: {
             type: DataTypes.INTEGER,
-            allowNull: false
         },
         flexibleRidge: {
             type: DataTypes.BOOLEAN,
-            allowNull: false
         },
         fontTyped: {
             type: DataTypes.BOOLEAN,
-            allowNull: false
         },
         fontSize: {
             type: DataTypes.FLOAT,
-            allowNull: false
         },
         eyeCare: {
             type: DataTypes.BOOLEAN,
-            allowNull: false
         },
         blackWhite: {
             type: DataTypes.BOOLEAN,
-            allowNull: false
         },
         oneCharLineSpacing: {
             type: DataTypes.BOOLEAN,
-            allowNull: false
         },
     },
     {paranoid: true}

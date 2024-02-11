@@ -1,7 +1,8 @@
 import express, { json, urlencoded } from 'express';
 import config from './config';
-import books from './routers/books';
-import accounts from './routers/accounts';
+import booksApi from './routers/booksApi';
+import accountsApi from './routers/accountsApi';
+// import routing from './routers/routing';
 import { initDB } from './db/initDB';
 
 async function main(): Promise<void> {
@@ -13,9 +14,14 @@ async function main(): Promise<void> {
 
     app.use(json())
     app.use(urlencoded({ extended: true}))
+    app.use(express.static('../public'))
 
-    app.use('/books', books)
-    app.use('/accounts', accounts)
+    // api/v1
+    app.use('/api/v1/books', booksApi)
+    app.use('/api/v1/accounts', accountsApi)
+
+    // /
+    // app.use('/', routing);
 
     app.listen(port, () => console.log(`Server is running on http://${host}:${port}`))
 }

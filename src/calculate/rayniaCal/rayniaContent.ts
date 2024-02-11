@@ -1,4 +1,4 @@
-import { RayniaI } from "./RayniaInterface";
+import { RayniaI } from "../../interfaces/RayniaInterface";
 
 // complete explainTypes
 

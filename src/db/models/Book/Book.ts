@@ -20,7 +20,35 @@ export const Book = sequelize.define(
         description: {
             type: DataTypes.TEXT,
             allowNull: false
-        }
+        },
+        minLevel: {
+            type: DataTypes.INTEGER,
+            validate: {
+                min: 1,
+                max: 6
+            }
+        },
+        minTerm: {
+            type: DataTypes.INTEGER,
+            validate: {
+                min: 1,
+                max: 2
+            }
+        },
+        maxLevel: {
+            type: DataTypes.INTEGER,
+            validate: {
+                min: 1,
+                max: 6
+            }
+        },
+        maxTerm: {
+            type: DataTypes.INTEGER,
+            validate: {
+                min: 1,
+                max: 2
+            }
+        }  // validate min < max
     },
     {paranoid: true}
 )

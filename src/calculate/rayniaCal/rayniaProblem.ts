@@ -1,4 +1,4 @@
-import { RayniaI } from "./RayniaInterface";
+import { RayniaI } from "../../interfaces/RayniaInterface";
 
 export function rayniaProblem(data: RayniaI): {
     manyScore: number;

@@ -15,7 +15,7 @@ export const BooksBookSubjectsMap = sequelize.define(
             }
         },
         subjectName: {
-            type: DataTypes.ENUM(),
+            type: DataTypes.ENUM("คณิตศาสตร์", "วิทยศาสตร์", "ฟิสิกส์", "เคมีวิทยา", "ชีวะวิทยา", "ดาราศาสตร์", "ภาษาอังกฤษ", "ภาษาไทย", "ภาษาอื่นๆ", "สังคมศาสตร์", "ประวัติศาสตร์", "ศาสนาศาสตร์", "กฏหมาย"),
             primaryKey: true,
             references: {
                 model: BookSubject,

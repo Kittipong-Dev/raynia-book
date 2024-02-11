@@ -79,20 +79,20 @@ interface RayniaI {
     analyzeHardness?: number;
     technicalTermDifficulty?: number;
     answer?: number;
-    surfaceCmW: number;
-    surfaceCmH: number;
-    weightG: number;
-    deepCm: number;
-    threadSewing: boolean;
-    glue: boolean;
-    gram: number;
-    cover: number;
-    flexibleRidge: boolean;
-    fontTyped: boolean;
-    fontSize: number;
-    eyeCare: boolean;
-    blackWhite: boolean;
-    oneCharLineSpacing: boolean;
+    surfaceCmW?: number;
+    surfaceCmH?: number;
+    weightG?: number;
+    deepCm?: number;
+    threadSewing?: boolean;
+    glue?: boolean;
+    gram?: number;
+    cover?: number;
+    flexibleRidge?: boolean;
+    fontTyped?: boolean;
+    fontSize?: number;
+    eyeCare?: boolean;
+    blackWhite?: boolean;
+    oneCharLineSpacing?: boolean;
 }
 
 interface RayniaedI {
