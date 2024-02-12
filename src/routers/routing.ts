@@ -7,7 +7,7 @@ router.get('/', (req: Request, res: Response) => {
     res.sendFile(path.join(process.cwd(), './public/index.html'))
 })
 router.get('/books', (req: Request, res: Response) => {
-    res.sendFile(path.join(process.cwd(), './public/homepage.html'))
+    res.sendFile(path.join(process.cwd(), './public/books.html'))
 })
 router.get('/books/book/:id', (req: Request, res: Response) => {
     res.sendFile(path.join(process.cwd(), './public/book.html'))
