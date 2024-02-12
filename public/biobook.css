@@ -154,7 +154,7 @@
     top: 36px;
     left: calc(50% - 150px);
     border-radius: 14px;
-    background-color: #e8e0f2;
+    background-color: #d6e6ef;
     width: 300px;
     height: 28px;
 }
@@ -163,7 +163,7 @@
     top: 36px;
     left: calc(50% - 150px);
     border-radius: 14px;
-    background-color: #ab80e3;
+    background-color: #21a2f2;
     width: 240px;
     height: 28px;
 }
@@ -181,7 +181,7 @@
     font-size: 15px;
     letter-spacing: 0.05em;
     font-weight: 500;
-    color: rgba(86, 22, 169, 0.75);
+    color: #3a5e95;
 }
 .rectangle-parent {
     position: absolute;
@@ -200,7 +200,7 @@
     top: 36px;
     left: calc(50% - 150px);
     border-radius: 14px;
-    background-color: #ab80e3;
+    background-color: #21a2f2;
     width: 270px;
     height: 28px;
 }
@@ -302,7 +302,7 @@
     top: 36px;
     left: calc(50% - 150px);
     border-radius: 14px;
-    background-color: #ab80e3;
+    background-color: #21a2f2;
     width: 210px;
     height: 28px;
 }
@@ -320,14 +320,14 @@
     font-size: 15px;
     letter-spacing: 0.05em;
     font-weight: 500;
-    color: rgba(86, 22, 169, 0.75);
+    color: #3a5e95;
 }
 .group-child7 {
     position: absolute;
     top: 36px;
     left: calc(50% - 150px);
     border-radius: 14px;
-    background-color: #ab80e3;
+    background-color: #21a2f2;
     width: 150px;
     height: 28px;
 }
@@ -354,7 +354,7 @@
 .book-info {
     width: 362px;
     position: relative;
-    top: -50px;
+    top: -150px;
     height: 659px;
     overflow: hidden;
     flex-shrink: 0;
@@ -396,10 +396,19 @@
     width: 273px;
     height: 52px;
 }
+.graphtext {
+    position: absolute;
+    top: 1050px;
+    left: calc(50% - 42px);
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    font-family: Karla;
+    color: #6b2dbc;
+}
 .add-info {
     width: 362px;
     position: relative;
-    top: -100px;
+    top: 0px;
     height: 101px;
     overflow: hidden;
     flex-shrink: 0;
@@ -410,9 +419,9 @@
 .content {
     position: absolute;
     top: 151px;
-    left: calc(50% - 181px);
+    left: calc(50% - 178px);
     width: 362px;
-    height: 1182px;
+    height: 1482px;
     overflow: hidden;
     display: flex;
     flex-direction: row;
@@ -617,6 +626,14 @@
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.bio {
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 148px);
+    width: 296px;
+    height: 429px;
 }
 
 .biobook1 {

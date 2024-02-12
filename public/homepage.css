@@ -173,6 +173,7 @@
     left: calc(50% - 215px);
     width: 430px;
     height: 130px;
+    z-index: 20;
 }
 .header-child {
     position: absolute;
