@@ -47,7 +47,7 @@ interface findBooks {
         publisher?: string;
     },
     orderBy?: {
-        price?: string
+        ascPrice?: boolean;
     }
 }
 

@@ -210,68 +210,64 @@ const findBooks = async (req: Request, res: Response) => { // validate price
         const { search } = req.query;
         const {filter, orderBy}: findBooks = req.body;
         let query: any = {
-            where: {
-                book: {},
-                author: {},
-                publisher: {},
-                subject: {},
-                type: {},
-                problem: {},
-                content: {},
-            },
+            where: {},
             order: []
         };
 
         if (search !== undefined) {
-            query.where.book.name = {
+            query.where.name = {
                 [Op.substring]: search
-            }
+            } /*{'$BooksBookTypesMaps.typeName$': { [Op.in]: ['เนื้อหา', 'โจทย์']}, [Op.and]: {'$RayniaedProblemData.problemQuadrant$': 1, '$RayniaedContentData.contentQuadrant$': 2}}*/
         }
 
         if (filter !== undefined) {
             const { subjects, level, types, problemQuadrant, contentQuadrant, author, publisher } = filter
-            if (subjects !== undefined) {
-                for (const subjectName of subjects) {
-                    let arr = []
-                    arr.push({subjectName: subjectName})
-                    Object.assign(query.where.subject, {[Op.and]: arr})
-                }
-            }
-            if (types !== undefined) {
-                for (const typeName of types) {
-                    let arr = []
-                    arr.push({typeName: typeName})
-                    Object.assign(query.where.type, {[Op.and]: arr})
-                }
-            }
+            // if (subjects !== undefined) {
+            //     let arr = []
+            //     for (const subjectName of subjects) { 
+            //         arr.push(subjectName)
+            //     }
+            //     query.where["$BooksBookSubjectsMaps.subjectName$"] = {[Op.in]: arr}
+            // }
+            // if (types !== undefined) {
+            //     let arr = []
+            //     for (const typeName of types) {
+            //         arr.push(typeName)
+            //     } 
+            //     query.where["$BooksBookTypesMaps.typeName$"] = {[Op.in]: arr}
+            // }
             if (author !== undefined) {
-                query.where.author.authorName = {
+                query.where["$BooksAuthorsMaps.authorName$"] = {
                     [Op.substring]: author
                 }
             }
             if (publisher !== undefined) {
-                query.where.publisher.publisherName = {
+                query.where["$BooksPublishersMaps.publisherName$"] = {
                     [Op.substring]: publisher
                 }
             }
-            // if (level !== undefined) {
-            //     query.where.level = level // level range
-            // }
+            if (level !== undefined) {
+                query.where.maxLevel = {[Op.gte]: level}
+                query.where.minLevel ={[Op.lte]: level}
+            }
             // if (problemQuadrant !== undefined) {
-            //     query.where.problem.problemQuadrant = problemQuadrant
+            //     query.where['$RayniaedProblemData.problemQuadrant$'] = problemQuadrant
             // }
             // if (contentQuadrant !== undefined) {
-            //     query.where.content.contentQuadrant = contentQuadrant
+            //     query.where['$RayniaedContentData.contentQuadrant$'] = contentQuadrant
             // }
         }
             
-        // if (orderBy) {
-        //     const { price } = orderBy
-        //     if (price !== undefined) {
-        //         query.order.push([sequelize.fn('max', sequelize.col('price')), price])
-        //     }
-        // }
-
+        if (orderBy) {
+            const { ascPrice } = orderBy
+            if (ascPrice !== undefined) {
+                if (ascPrice === true) {
+                    query.order.push(['price', 'ASC'])
+                } else {
+                    query.order.push(['price', 'DESC'])
+                }
+            }
+        }
 
         const data = await Book.findAll({
             attributes: [
@@ -283,15 +279,15 @@ const findBooks = async (req: Request, res: Response) => { // validate price
                 'maxLevel',
                 'maxTerm',
             ],
-            where: query.where.book,
+            where: query.where, /*{'$BooksBookTypesMaps.typeName$': { [Op.in]: ['เนื้อหา', 'โจทย์']}, [Op.and]: {'$RayniaedProblemData.problemQuadrant$': 1, '$RayniaedContentData.contentQuadrant$': 2}}*/
             order: query.order,
             include: [
                 { model: BooksImage, as: 'bookId', association: new HasMany(Book, BooksImage, {foreignKey: "bookId"})},
-                { model: BooksAuthorsMap, as: 'bookId', association: new HasMany(Book, BooksAuthorsMap, {foreignKey: "bookId"}), where: query.where.author },
-                { model: BooksPublishersMap, as: 'bookId', association: new HasMany(Book, BooksPublishersMap, {foreignKey: "bookId"}),  where: query.where.publisher },
-                { model: BooksBookTagsMap, as: 'bookId', association: new HasMany(Book, BooksBookTagsMap, {foreignKey: "bookId"}), where: query.where.tag},
-                { model: BooksBookTypesMap, as: 'bookId', association: new HasMany(Book, BooksBookTypesMap, {foreignKey: "bookId"}), where: query.where.type },
-                { model: BooksBookSubjectsMap, as: 'bookId', association: new HasMany(Book, BooksBookSubjectsMap, {foreignKey: "bookId"}), where: query.where.subject },
+                { model: BooksBookTagsMap, as: 'bookId', association: new HasMany(Book, BooksBookTagsMap, {foreignKey: "bookId"})},
+                { model: BooksAuthorsMap, as: 'bookId', association: new HasMany(Book, BooksAuthorsMap, {foreignKey: "bookId"}), /*where: query.where.author*/ },
+                { model: BooksPublishersMap, as: 'bookId', association: new HasMany(Book, BooksPublishersMap, {foreignKey: "bookId"}),  /*where: query.where.publisher*/ },
+                { model: BooksBookTypesMap, as: 'bookId', association: new HasMany(Book, BooksBookTypesMap, {foreignKey: "bookId"}), /*where: { [Op.and]: {[Op.in]: ['โจทย์'], [Op.in]: ['เนื้อหา']}*/ },
+                { model: BooksBookSubjectsMap, as: 'bookId', association: new HasMany(Book, BooksBookSubjectsMap, {foreignKey: "bookId"}), /*where: query.where.subject*/ },
                 { model: RayniaedContentData, as: 'bookId', association: new HasMany(Book, RayniaedContentData, {foreignKey: "bookId"}), /*where: query.where.content*/ },
                 { model: RayniaedProblemData, as: 'bookId', association: new HasMany(Book, RayniaedProblemData, {foreignKey: "bookId"}), /*where: query.where.problem*/ },
                 { model: RayniaedPhysicalData, as: 'bookId', association: new HasMany(Book, RayniaedPhysicalData, {foreignKey: "bookId"}) },
