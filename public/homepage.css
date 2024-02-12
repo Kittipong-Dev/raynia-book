@@ -49,8 +49,14 @@
 	left: 135px;
 	z-index: 1;
 }
-.bluesign1 {
-	position: absolute;
+.yellowbluesign {
+    position: absolute;
+	top: 0px;
+	left: 135px;
+	z-index: 1;
+}
+.redsign {
+    position: absolute;
 	top: 0px;
 	left: 135px;
 	z-index: 1;
