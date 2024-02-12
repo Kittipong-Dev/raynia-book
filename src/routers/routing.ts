@@ -3,11 +3,8 @@ import path from 'path';
 
 const router = express.Router()
 
-router.get('/', (req: Request, res: Response) => { path.join(process.cwd(), './public/test/index.html')
-    res.sendFile(path.join(process.cwd(), './public/raynia.html'))
-})
-router.get('/welcome', (req: Request, res: Response) => {
-    res.sendFile(path.join(process.cwd(), './public/welcome.html'))
+router.get('/', (req: Request, res: Response) => {
+    res.sendFile(path.join(process.cwd(), './public/index.html'))
 })
 router.get('/books', (req: Request, res: Response) => {
     res.sendFile(path.join(process.cwd(), './public/homepage.html'))
