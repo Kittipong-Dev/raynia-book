@@ -1,12 +1,19 @@
 var bookImg = document.getElementById("bookImg");
 var bookOverlayContainer = document.getElementById("bookOverlayContainer");
 var bookcontent = document.getElementById("bookcontent");
+var codeInfoIcon = document.getElementById("codeInfoIcon");
+var TDP = document.getElementById("TDP");
 
 if (bookImg && bookOverlayContainer && bookcontent) {
     bookImg.addEventListener("click", function (e) {
         bookOverlayContainer.style.display = "flex";
     });
 
+if (codeInfoIcon && TDP) {
+    codeInfoIcon.addEventListener("click", function (e) {
+        TDP.style.display = "flex";
+    });
+}
     // Handle the click on "Popup Next" inside the first popup
     var next = document.querySelector(".next");
     if (next) {
@@ -61,6 +68,11 @@ if (bookImg && bookOverlayContainer && bookcontent) {
     bookOverlayContainer.addEventListener("click", function (e) {
         if (e.target === bookOverlayContainer) {
             bookOverlayContainer.style.display = "none";
+        }
+    });
+    TDP.addEventListener("click", function (e) {
+        if (e.target === TDP) {
+            TDP.style.display = "none";
         }
     });
 }

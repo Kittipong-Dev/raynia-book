@@ -596,14 +596,13 @@
     overflow: hidden;
 }
 .t-d-p {
-    width: 153px;
+    width: 200px;
     position: relative;
-    height: 206px;
+    height: 250px;
     max-width: 90%;
     max-height: 90%;
+    left: 100px;
     overflow: auto;
-    text-align: center;
-    font-size: 13px;
     color: rgba(86, 22, 169, 0.75);
     font-family: Inter;
 }
@@ -733,4 +732,10 @@
     color: #000;
     font-family: Inter;
 }
+
+
+
+/* ----------------------------------------------------------- */
+
+
 

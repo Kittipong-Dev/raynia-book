@@ -1032,26 +1032,148 @@
 }
 .filterex {
 	position: absolute;
-	top: 97px;
+	top: 205px;
 	left: calc(50% + 130px);
 	cursor: pointer;
+    z-index: 100;
+}
+.filterpopup {
+    position: absolute;
+    width: 53.67%;
+    top: 8.5px;
+    left: calc(50% - 280px);
+    font-size: 20px;
+    letter-spacing: 0.02em;
+    display: inline-block;
+    z-index: 200;
 }
 .filter1 {
     position: absolute;
     width: 53.67%;
-    top: calc(50% - 403.5px);
     left: calc(50%);
     font-size: 20px;
     letter-spacing: 0.02em;
     display: inline-block;
+    z-index: 200;
 }
 .filter-overlay {
     width: 100%;
-    position: relative;
+    position: absolute;
     height: 931px;
     text-align: left;
     font-size: 18px;
     color: #252525;
     font-family: Karla;
 }
+
+.popup-overlay {
+    width: auto;
+    height: 1000px ;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: -23.5px;
+    right: 0;
+    bottom: 0;
+    left: calc(50% - 550px);
+    background-color: rgba(255, 255, 255, 0);
+    z-index: 1000; /* Set a high z-index value to ensure it's above the page content */
+}
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.exit {
+    position: absolute;
+    top: 16px;
+    left: 15px;
+    width: 37px;
+    height: 37px;
+    z-index: 1100;
+}
+.gradelist {
+    position: absolute;
+    top: 332px;
+    left: calc(50% - 191px);
+	z-index: 1000;
+	line-height: 0.1;
+    white-space: pre-wrap;
+    display: inline-block;
+}
+.gradelist1 {
+    position: absolute;
+    top: 50px;
+	z-index: 1000;
+	line-height: 0.88;
+    white-space: pre-wrap;
+    display: inline-block;
+}
+.gradelist2 {
+    position: absolute;
+    top: 50px;
+    left: 146px;
+	z-index: 1000;
+	line-height: 0.88;
+    white-space: pre-wrap;
+    display: inline-block;
+}
+
+
+
+.textarea1 input[type="text"] {
+    position: absolute;
+    background: transparent;
+    border: none; /* Set the initial border color with transparency */
+    height: 30px;
+    width: 110px;
+    top: 707px;
+    left: 230px;
+    color: #ab80e3;
+    font-size: 13px;
+    font-weight: 600;
+    transition: border-color 0.3s; /* Add a smooth transition for the border color */
+}
+
+.textarea1 input[type="text"]:focus {
+    border-color: rgba(0, 0, 0, 0); /* Set the border color to transparent on focus */
+    outline: none; /* Remove the default focus outline if you want */
+}
+
+
+.textarea2 input[type="text"] {
+    position: absolute;
+    background: transparent;
+    border: none; /* Set the initial border color with transparency */
+    height: 30px;
+    width: 110px;
+    top: 771px;
+    left: 230px;
+    color: #ab80e3;
+    font-size: 13px;
+    font-weight: 600;
+    transition: border-color 0.3s; /* Add a smooth transition for the border color */
+}
+
+.textarea2 input[type="text"]:focus {
+    border-color: rgba(0, 0, 0, 0); /* Set the border color to transparent on focus */
+    outline: none; /* Remove the default focus outline if you want */
+}
+
+.clear {
+    position: absolute;
+    top: 841px;
+    left: 32px;
+    z-index: 1100;
+}
+.confirm {
+    position: absolute;
+    top: 841px;
+    left: 207px;
+    z-index: 1100;
+}
+/* --------------------------------------------------------------- */
 

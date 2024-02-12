@@ -141,22 +141,25 @@
 }
 .xxx-xxx-container {
     position: absolute;
-    width: 92.54%;
+    width: 100%;
     top: 61px;
-    left: 7.46%;
+    left: 0px;
     font-size: 15px;
-    line-height: 22px;
+    line-height: 6px;
     white-space: pre-wrap;
     display: inline-block;
 }
 .book-info {
-    width: 362px;
+    width: 335px;
     position: relative;
-    height: 237px;
-    overflow: hidden;
-    flex-shrink: 0;
+    top: -50px;
+    font-size: 15px;
+    line-height: 22px;
+    font-family: Inter;
+    color: #252525;
+    white-space: pre-wrap;
     text-align: left;
-    font-size: 20px;
+    display: inline-block;
 }
 .group-child {
     position: absolute;
@@ -423,7 +426,9 @@
     font-weight: 600;
 }
 .book-scoring {
+    position: relative;
     width: 362px;
+    top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -443,6 +448,7 @@
     letter-spacing: 0.02em;
 }
 .graph {
+    top: 0px;
     width: 362px;
     position: relative;
     height: 299px;
@@ -492,6 +498,7 @@
 .add-info {
     width: 362px;
     position: relative;
+    top: -70px;
     height: 101px;
     overflow: hidden;
     flex-shrink: 0;
@@ -504,12 +511,22 @@
     top: 151px;
     left: 34px;
     width: 362px;
-    height: 1757px;
+    height: 1700px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: flex-start;
+}
+.popupnext {
+    position: absolute;
+    left: calc(80%);
+    top: 145px;
+}
+.popupback {
+    position: absolute;
+    left: -10px;
+    top: 120px;
 }
 .scrolling {
     position: absolute;
@@ -518,6 +535,24 @@
     width: 430px;
     height: 909px;
     overflow-y: auto;
+}
+.searchmenu {
+    position: absolute;
+    bottom: 30px;
+    left: calc(50% - 40px);
+    z-index: 100;
+    opacity: 0;
+    width: 8%;
+    height: 8%;
+}
+.usermenu {
+	position: absolute;
+    bottom: 30px;
+    left: calc(50% + 100px);
+    z-index: 100;
+    opacity: 0;
+    width: 8%;
+    height: 8%;
 }
 .menu-bar-icon {
     position: absolute;
@@ -531,7 +566,7 @@
     width: 200%;
     top: 0px;
     right: 0px;
-    left: calc(50% - 380px);
+    left: calc(50% - 440px);
     background-color: rgba(238, 238, 238, 0.95);
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(20px);
@@ -544,27 +579,21 @@
     letter-spacing: 0.12em;
     font-weight: 500;
 }
-.vector-icon {
+.vector-icon, .group-child15 {
     position: absolute;
-    top: 78px;
-    left: 36px;
-    width: 8px;
-    height: 16px;
-}
-.group-child15 {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 104px;
-    height: 121px;
+    top: 12px;
+    left: calc(50% - 100px);
+    width: 98px;
+    height: 106px;
 }
 .vector-parent {
     position: absolute;
     top: 0px;
-    left: 0px;
+    left: calc(50%);
     width: 104px;
     height: 121px;
     cursor: pointer;
+    z-index: 100;
 }
 
 .header {
@@ -823,19 +852,44 @@
     height: 28px;
     overflow: hidden;
 }
+.popup-overlay {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(113, 113, 113, 0.3);
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Set a high z-index value to ensure it's above the page content */
+}
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.physic {
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 148px);
+    width: 296px;
+    height: 429px;
+}
 .t-d-p {
-    width: 153px;
+    width: 200px;
     position: relative;
-    height: 206px;
+    height: 250px;
     max-width: 90%;
     max-height: 90%;
+    left: 100px;
     overflow: auto;
-    text-align: center;
-    font-size: 13px;
     color: rgba(86, 22, 169, 0.75);
     font-family: Inter;
 }
-
 
 .book-img-4 {
     position: absolute;
@@ -844,6 +898,7 @@
     width: 296px;
     height: 429px;
 }
+
 .book-overlay-3 {
     width: 430px;
     position: relative;
@@ -852,4 +907,3 @@
     max-height: 90%;
     overflow: auto;
 }
-
