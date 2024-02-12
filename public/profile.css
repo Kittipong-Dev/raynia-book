@@ -8,7 +8,7 @@
 .scrolling {
     position: absolute;
     top: 121px;
-    left: 0px;
+    left: calc(50% - 225px);
     width: 430px;
     height: 811px;
     overflow-y: auto;
@@ -24,6 +24,15 @@
     bottom: 206px;
     left: calc(50% - 135px);
     z-index: 10;
+}
+.searchmenu {
+    position: absolute;
+    bottom: 30px;
+    left: calc(50% - 40px);
+    z-index: 100;
+    opacity: 0;
+    width: 8%;
+    height: 8%;
 }
 .menu-bar-icon {
     position: absolute;

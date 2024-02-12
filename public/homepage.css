@@ -110,12 +110,23 @@
     height: 811px;
     overflow-y: auto;
 }
-.usermenu {
-	position: absolute;
-    bottom: 45px;
-    left: calc(50% + 120px);
+.searchmenu {
+    position: absolute;
+    bottom: 30px;
+    left: calc(50% - 40px);
     z-index: 100;
     opacity: 0;
+    width: 8%;
+    height: 8%;
+}
+.usermenu {
+	position: absolute;
+    bottom: 30px;
+    left: calc(50% + 100px);
+    z-index: 100;
+    opacity: 0;
+    width: 8%;
+    height: 8%;
 }
 .dropdown-content {
     display: none;
