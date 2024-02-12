@@ -13,6 +13,18 @@
     height: 811px;
     overflow-y: auto;
 }
+.profilecontent {
+    position: absolute;
+    top: 52px;
+    left: calc(50% - 190px);
+    z-index: 10;
+}
+.profilerequest {
+    position: absolute;
+    bottom: 206px;
+    left: calc(50% - 135px);
+    z-index: 10;
+}
 .menu-bar-icon {
     position: absolute;
     bottom: 0px;

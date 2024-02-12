@@ -1,0 +1,14 @@
+.icon-search {
+    width: 100%;
+    position: relative;
+    height: 25px;
+}
+
+.menu-bar-icon {
+    width: 100%;
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    height: 130px;
+}
+
