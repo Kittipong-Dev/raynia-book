@@ -1,0 +1,87 @@
+.raynia {
+    position: absolute;
+    top: 256px;
+    left: calc(50% - 112px);
+    font-size: 57px;
+    letter-spacing: 0.12em;
+    font-weight: 500;
+    font-family: Karla;
+    color: #6b2dbc;
+}
+
+.sign-in-child {
+    position: absolute;
+    top: 0px;
+    left: -5px;
+    border-radius: 50px;
+    width: 316px;
+    height: 76px;
+}
+.sign-up-child {
+    position: absolute;
+    top: 0px;
+    left: -5px;
+    border-radius: 50px;
+    width: 316px;
+    height: 76px;
+}
+
+.sign-in1 {
+    position: absolute;
+    left: calc(50% - 75px);
+    letter-spacing: 0.12em;
+    font-weight: 600;
+    top: 15px;
+}
+
+.sign-in {
+    /* margin-left: auto;
+    margin-right: auto;
+    top: 503px; */
+    position: absolute;
+    top: 370px;
+    left: calc(50% - 155px);
+    width: 316px;
+    height: 76px;
+}
+
+.sign-up1 {
+    position: absolute;
+    left: calc(50% - 80px);
+    letter-spacing: 0.12em;
+    font-weight: 600;
+    top: 15px;
+}
+
+.sign-up {
+    /* top: 520px; /* Adjusted top position 
+    margin-left: auto;
+    margin-right: auto; */
+    position: absolute;
+    top: 480px;
+    left: calc(50% - 155px);
+    width: 316px;
+    height: 76px;
+}
+
+.continue-as-guest {
+    position: absolute;
+    top: 595px; /* Adjusted top position */
+    left: calc(50% - 90px);
+    font-size: 18px;
+    letter-spacing: 0.03em;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.welcome {
+    width: 100%;
+    position: relative;
+    background-color: #f4f4f4;
+    height: 4000px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 32px;
+    color: #ab80e3;
+    font-family: Inter;
+}
