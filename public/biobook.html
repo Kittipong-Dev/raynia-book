@@ -157,20 +157,9 @@
             
   	</div>
   	
-  	<div id="TDP" class="popupoverlay" style="display:none">
-    		
+  	<div id="TDP" class="popup-overlay" style="display:none">
     		<div class="t-d-p">
-      			<div class="t-d-p-child">
-      			</div>
-      			<div class="t-d-p-item">
-      			</div>
-      			<div class="t-d-p-inner">
-      			</div>
-      			<div class="t-d-p-child1">
-      			</div>
-      			<div class="t-text">T : Text</div>
-      			<div class="d-diagram">D : Diagram</div>
-      			<div class="p-picture">P : Picture</div>
+				<img class="tdppopup" alt="" src="TDP.svg">
       			<img class="discard-icon" alt="" src="exit.svg">
       			
     		</div>	
@@ -188,12 +177,20 @@
 		</div>
 	</div>
 
-	<script>
-		function myFunction() {
-		  var popupoverlay = document.getElementById("codeInfoIcon");
-		  popupoverlay.classList.toggle("show");
-		}
-		</script>
+      <script>
+        var addInfoContainer = document.getElementById("addInfoContainer");
+        if(addInfoContainer) {
+              addInfoContainer.addEventListener("click", function (e) {
+                    // Add your code here
+              });
+        }
+        
+        var groupContainer = document.getElementById("groupContainer");
+        if(groupContainer) {
+              groupContainer.addEventListener("click", function (e) {
+                    // Add your code here
+              });
+        }</script>
 	<script src="biobookoverlay.js"></script>
 	<script src="tohomepage.js"></script>
 	<script src="tosearchpage.js"></script>
