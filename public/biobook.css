@@ -607,7 +607,7 @@
     color: rgba(86, 22, 169, 0.75);
     font-family: Inter;
 }
-.popup-overlay {
+.popupoverlay {
     display: flex;
     flex-direction: column;
     position: fixed;
