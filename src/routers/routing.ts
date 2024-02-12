@@ -16,7 +16,7 @@ router.get('/search', (req: Request, res: Response) => {
     res.sendFile(path.join(process.cwd(), './public/search.html'))
 })
 router.get('/account', (req: Request, res: Response) => {
-    res.sendFile(path.join(process.cwd(), './public/account.html'))
+    res.sendFile(path.join(process.cwd(), './public/signin_signup.html'))
 })
 router.get('/signIn', (req: Request, res: Response) => {
     res.sendFile(path.join(process.cwd(), './public/signin.html'))

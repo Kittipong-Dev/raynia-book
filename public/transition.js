@@ -1,5 +1,4 @@
 let html = document.querySelector('html')
-console.log(html)
 let defaultHtml = html.innerHTML
 html.innerHTML = `
 <head>
