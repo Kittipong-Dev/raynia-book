@@ -152,7 +152,23 @@
     font-weight: 600;
     color: #252525;
 }
-.div1 {
+
+.div01 {
+    width: 327px;
+    position: relative;
+    height: 108px;
+}
+.div02 {
+    width: 327px;
+    position: relative;
+    height: 108px;
+}
+.div03 {
+    width: 327px;
+    position: relative;
+    height: 108px;
+}
+.div04 {
     width: 327px;
     position: relative;
     height: 108px;
@@ -391,43 +407,202 @@
     font-family: Inter;
 }
 
+.container {
+    display: block;
+    position: relative;
+    padding-left: 55px;
+    padding-top: 50px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    z-index: 1200;
+    font: Inter;
+  }
+  
+  /* Hide the browser's default radio button */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 35px;
+    width: 35px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: 3px solid #AB80E3;
+  }
+  .checkmark1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 35px;
+    width: 35px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: 3px solid #AB80E3;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #f3eaff;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #AB80E3;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .container .checkmark:after {
+      top: 9px;
+      left: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white;
+  }
+
+.textarea1 input[type="text"] {
+    position: absolute;
+    background: transparent;
+    border: none; /* Set the initial border color with transparency */
+    height: 30px;
+    width: 110px;
+    top: 707px;
+    left: 230px;
+    color: #ab80e3;
+    font-size: 13px;
+    font-weight: 600;
+    transition: border-color 0.3s; /* Add a smooth transition for the border color */
+}
+
+.textarea1 input[type="text"]:focus {
+    border-color: rgba(0, 0, 0, 0); /* Set the border color to transparent on focus */
+    outline: none; /* Remove the default focus outline if you want */
+}
+
+
+.textarea2 input[type="text"] {
+    position: absolute;
+    background: transparent;
+    border: none; /* Set the initial border color with transparency */
+    height: 30px;
+    width: 110px;
+    top: 771px;
+    left: 230px;
+    color: #ab80e3;
+    font-size: 13px;
+    font-weight: 600;
+    transition: border-color 0.3s; /* Add a smooth transition for the border color */
+}
+
+.textarea2 input[type="text"]:focus {
+    border-color: rgba(0, 0, 0, 0); /* Set the border color to transparent on focus */
+    outline: none; /* Remove the default focus outline if you want */
+}
+.h {
+    position: absolute;
+    display: flex;
+    left: 33px;
+    top: 50px;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+.h1{
+    position: absolute;
+    display: flex;
+    left: 89px;
+    top: 50px;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+.h2 {
+    position: absolute;
+    display: flex;
+    left: 143px;
+    top: 50px;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+.h3 {
+    position: absolute;
+    display: flex;
+    left: 199px;
+    top: 50px;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+.h4 {
+    position: absolute;
+    display: flex;
+    left: 254px;
+    top: 50px;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+.h5 {
+    position: absolute;
+    display: flex;
+    left: 309px;
+    top: 50px;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
 .scorelist {
     position: absolute;
-    top: 45px;
-    left: calc(50% - 191px);
-	z-index: 1000;
+    display: flex;
+    top: 40px;
+    left: calc(50% - 175px);
+	z-index: 0; 
+    padding-left: 20px;
 }
 .scorelist1 {
     position: absolute;
-	z-index: 1000;
     display: flex;
-    flex: 33.33%;
-    padding-left: 50px;
+    top: 45px;
+    left: calc(50% - 175px);
+	z-index: 0; 
+    padding-left: 20px;
 }
 .scorelist2 {
     position: absolute;
-    top: 250px;
-	z-index: 1000;
-	line-height: 0.88;
-    white-space: pre-wrap;
-    display: inline-block;
+    display: flex;
+    top: 50px;
+    left: calc(50% - 175px);
+	z-index: 0; 
+    padding-left: 20px;
 }
 .scorelist3 {
     position: absolute;
-    top: 450px;
-	z-index: 1000;
-	line-height: 0.88;
-    white-space: pre-wrap;
-    display: inline-block;
+    display: flex;
+    top: 45px;
+    left: calc(50% - 175px);
+	z-index: 0; 
+    padding-left: 20px;
 }
-.scorelist4 {
-    position: absolute;
-    top: 650px;
-	z-index: 1000;
-	line-height: 0.88;
-    white-space: pre-wrap;
-    display: inline-block;
-}
+
 
 .grade-requirement {
     width: 159px;
@@ -436,3 +611,60 @@
 }
 
 
+.textarea1 input[type="text"] {
+    position: absolute;
+    background: transparent;
+    border: none; /* Set the initial border color with transparency */
+    height: 30px;
+    width: 80px;
+    top: 7px;
+    left: 150px;
+    color: #ab80e3;
+    font-size: 18px;
+    font-weight: 600;
+    transition: border-color 0.3s; /* Add a smooth transition for the border color */
+}
+
+.textarea1 input[type="text"]:focus {
+    border-color: rgba(0, 0, 0, 0); /* Set the border color to transparent on focus */
+    outline: none; /* Remove the default focus outline if you want */
+}
+
+
+.textarea2 input[type="text"] {
+    position: absolute;
+    background: transparent;
+    border: none; /* Set the initial border color with transparency */
+    height: 30px;
+    width: 80px;
+    top: 7px;
+    left: 150px;
+    color: #ab80e3;
+    font-size: 18px;
+    font-weight: 600;
+    transition: border-color 0.3s; /* Add a smooth transition for the border color */
+}
+
+.textarea2 input[type="text"]:focus {
+    border-color: rgba(0, 0, 0, 0); /* Set the border color to transparent on focus */
+    outline: none; /* Remove the default focus outline if you want */
+}
+
+.textarea3 input[type="text"] {
+    position: absolute;
+    background: transparent;
+    border: none; /* Set the initial border color with transparency */
+    height: 30px;
+    width: 80px;
+    top: 7px;
+    left: 150px;
+    color: #ab80e3;
+    font-size: 18px;
+    font-weight: 600;
+    transition: border-color 0.3s; /* Add a smooth transition for the border color */
+}
+
+.textarea3 input[type="text"]:focus {
+    border-color: rgba(0, 0, 0, 0); /* Set the border color to transparent on focus */
+    outline: none; /* Remove the default focus outline if you want */
+}
