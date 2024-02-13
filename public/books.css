@@ -354,16 +354,20 @@
 }
 .content {
 	position: absolute;
-	top: 73px;
-	left: calc(50% - 198.5px);
-	width: 397px;
-	height: 384px;
+	width: 140%;
+	height: 100%;
 	overflow: hidden;
+}
+.info01 {
+    position: relative;
+    left: -60px;
+    width: 98%;
+    height: 98%;
 }
 .information-item {
 	position: absolute;
-	top: calc(50% + 158.5px);
-	left: calc(50% + 94.5px);
+	top: calc(50% + 128.5px);
+	left: calc(50% + 85px);
 	width: 104px;
 	height: 121px;
 	object-fit: contain;
@@ -377,12 +381,13 @@
 }
 .b3 {
 	position: absolute;
-	top: 30px;
-	left: calc(50% - 116.5px);
-	font-size: 24px;
-	letter-spacing: 0.03em;
-	color: #252525;
+	top: 460px;
+	left: calc(50% - 78px);
+	font-size: 14px;
+	letter-spacing: 0.05em;
+	color: #cccccc;
 	text-align: center;
+    font-style: Inter;
 }
 .information {
 	position: absolute;
@@ -391,11 +396,19 @@
 	width: 397px;
 	height: 559px;
 }
+.discard-icon {
+	position: absolute;
+	top: 35px;
+	left: 326px;
+	width: 37px;
+	height: 37px;
+    z-index: 10;
+}
 .info8 {
 	width: 397px;
-	position: fixed;
-    left: calc(50% - 200px);
-    top: 50px;
+	position: relative;
+    left: calc(50% - 250px);
+    top: 10px;
 	height: 559px;
 	overflow: auto; 
 	text-align: left;
@@ -428,14 +441,6 @@
 
 /* ------------------------------------------------------------------------------------------------------------------ */
 
-.discard-icon {
-	position: absolute;
-	top: 26px;
-	left: 326px;
-	width: 37px;
-	height: 37px;
-	overflow: hidden;
-}
 .b4 {
 	position: absolute;
 	top: 18px;
@@ -495,14 +500,7 @@
 	width: 95px;
 	height: 80px;
 }
-.content {
-	position: absolute;
-	top: 63px;
-	left: calc(50% - 198.5px);
-	width: 397px;
-	height: 394px;
-	overflow: hidden;
-}
+
 .vector-icon {
 	position: absolute;
 	top: calc(50% - 8.5px);

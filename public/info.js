@@ -6,6 +6,11 @@ if (information && infoContainer && infoContainer1) {
     information.addEventListener("click", function (e) {
         infoContainer.style.display = "flex";
     });
+    if (information && infoContainer && infoContainer1) {
+        information.addEventListener("click", function (e) {
+            infoContainer.style.display = "flex";
+        });
+    }
 
     // Handle the click on "Popup Next" inside the first popup
     var popupNext = document.querySelector(".popupnext");
@@ -23,6 +28,11 @@ if (information && infoContainer && infoContainer1) {
     infoContainer1.addEventListener("click", function (e) {
         if (e.target === infoContainer1) {
             infoContainer1.style.display = "none";
+        }
+    });
+    infoContainer.addEventListener("click", function (e) {
+        if (e.target === infoContainer) {
+            infoContainer.style.display = "none";
         }
     });
 }
