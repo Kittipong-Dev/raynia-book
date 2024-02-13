@@ -234,17 +234,6 @@
 
 /* ----------------------------------------------------------------------------------------------------------------- */
 
-
-.information-child {
-	position: absolute;
-	top: calc(50% - 279.5px);
-	left: calc(50% - 198.5px);
-	border-radius: 55px;
-	background-color: #fbfbfb;
-	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
-	width: 397px;
-	height: 559px;
-}
 .discard-icon {
 	position: absolute;
 	top: 26px;
@@ -390,11 +379,11 @@
 }
 .info8 {
 	width: 397px;
-	position: relative;
+	position: fixed;
+    left: calc(50% - 200px);
+    top: 50px;
 	height: 559px;
-	max-width: 90%;
-	max-height: 90%;
-	overflow: auto;
+	overflow: auto; 
 	text-align: left;
 	font-size: 32px;
 	color: #f4f4f4;
