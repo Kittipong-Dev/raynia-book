@@ -10,17 +10,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function switchimage(newImageSrc) {
     document.getElementById('defaultmain').src = newImageSrc;
-    if (newImageSrc == 'sortlowmain.svg') {
-        document.getElementById('low').src = 'sortlowon.svg';
-        document.getElementById('high').src = 'sorthigh.svg';
-        document.getElementById('default').src = 'sortdefault.svg';
-    } else if (newImageSrc == 'sorthighmain.svg') {
-        document.getElementById('high').src = 'sorthighon.svg';
-        document.getElementById('default').src = 'sortdefault.svg';
-        document.getElementById('low').src = 'sortlow.svg';
-    } else if (newImageSrc == 'sortdefaultmain.svg') {
-        document.getElementById('high').src = 'sorthigh.svg';
-        document.getElementById('low').src = 'sortlow.svg';
-        document.getElementById('default').src = 'sortdefaulton.svg';
-    }
+    // if (newImageSrc == 'sortlowmain.svg') {
+    //     document.getElementById('low').src = 'sortlowon.svg';
+    //     document.getElementById('high').src = 'sorthigh.svg';
+    //     document.getElementById('default').src = 'sortdefault.svg';
+    // } else if (newImageSrc == 'sorthighmain.svg') {
+    //     document.getElementById('high').src = 'sorthighon.svg';
+    //     document.getElementById('default').src = 'sortdefault.svg';
+    //     document.getElementById('low').src = 'sortlow.svg';
+    // } else if (newImageSrc == 'sortdefaultmain.svg') {
+    //     document.getElementById('high').src = 'sorthigh.svg';
+    //     document.getElementById('low').src = 'sortlow.svg';
+    //     document.getElementById('default').src = 'sortdefaulton.svg';
+    // }
 }
+

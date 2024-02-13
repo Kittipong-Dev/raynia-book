@@ -107,7 +107,7 @@
     top: 121px;
     left: calc(50% - 220px);
     width: 430px;
-    height: 811px;
+    height: 711px;
     overflow-y: auto;
 }
 .searchmenu {
@@ -1097,32 +1097,89 @@
 }
 .gradelist {
     position: absolute;
-    top: 332px;
-    left: calc(50% - 191px);
+    top: 405px;
+    left: calc(50% - 120px);
 	z-index: 1000;
-	line-height: 0.1;
+	line-height: 0.165;
     white-space: pre-wrap;
-    display: inline-block;
-}
-.gradelist1 {
-    position: absolute;
-    top: 50px;
-	z-index: 1000;
-	line-height: 0.88;
-    white-space: pre-wrap;
-    display: inline-block;
-}
-.gradelist2 {
-    position: absolute;
-    top: 50px;
-    left: 146px;
-	z-index: 1000;
-	line-height: 0.88;
-    white-space: pre-wrap;
-    display: inline-block;
+    display: inline-block
 }
 
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    padding-top: 10px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    z-index: 1200;
+    font: Inter;
+  }
 
+  .gradelist1 {
+    position: absolute;
+    top: 404px;
+    left: calc(50% - 10px);
+	z-index: 1000;
+	line-height: 0.165;
+    white-space: pre-wrap;
+    display: inline-block
+}
+  
+  /* Hide the browser's default radio button */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #f4deff;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #d4b9dd;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #6B2DBC;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .container .checkmark:after {
+       top: 9px;
+      left: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white;
+  }
 
 .textarea1 input[type="text"] {
     position: absolute;
@@ -1169,11 +1226,18 @@
     left: 32px;
     z-index: 1100;
 }
-.confirm {
+.confirm1 {
     position: absolute;
     top: 841px;
     left: 207px;
     z-index: 1100;
+}
+
+.add {
+    position: absolute;
+    top: 710px;
+    left: calc(50% + 125px);
+    z-index: 1000;
 }
 /* --------------------------------------------------------------- */
 

@@ -14,3 +14,20 @@ if (signInText) {
         window.transitionToPage('signIn');
     });
 }
+
+let confirmDOM = document.getElementById('confirm')
+
+if (confirmDOM !== undefined) {
+    confirmDOM.addEventListener("click", function (event) {
+        let emailDOM = document.getElementById('email')
+        let usernameDOM = document.getElementById('username')
+        let nameDOM = document.getElementById('name')
+        let passwordDOM = document.getElementById('password')
+        let confirmPasswordDOM = document.getElementById('confirmPassword')
+        if (!passwordDOM.value || !emailDOM.value || !nameDOM.value || !usernameDOM.value || !confirmPasswordDOM.value || passwordDOM.value !== confirmPasswordDOM.value) {
+            console.error('validate failed')
+            return
+        }
+        fetch()
+    })
+}

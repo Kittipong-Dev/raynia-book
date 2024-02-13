@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
     var allgrade = document.getElementById('allgrade');
-    var dropdownContent = document.querySelector('.dropdown-content');
 });
 function switchimage(newImageSrc) {
     document.getElementById('allgrade').src = newImageSrc;

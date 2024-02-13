@@ -128,7 +128,7 @@
         </div>
         <div class="bgsort">
                 <div class="sort" id="sortdefault">
-                        <img class="sortex" alt="" src="sortdefaultmain.svg" id="defaultmain">
+                  <img class="sortex" alt="" src="sortdefaultmain.svg" id="defaultmain">
                         <div class="dropdown-content">
                                 <div class="sortlist">
                                   <h><img src="sortdefaulton.svg" alt="grade" id="default" onclick="switchimage('sortdefaultmain.svg')"></h>
@@ -138,10 +138,13 @@
                                 <div class="bgdropdown"></div>
                         </div>
                 </div>
-
+            
 
                 <div class="explore-books">Explore books</div>
-        </div>        
+        </div>  
+        <div id="publisheradd">
+            <img class="add" alt="" src="publisheradd.svg">
+        </div>     
         <img class="menu-bar-icon" alt="" src="home menu bar.svg">
         <div class="usermenu" id="touser">
             <img class="home" alt="" src="homeIcon.svg">
@@ -162,12 +165,12 @@
   <img class="filterex" alt="" src="filter.svg" id="filtericon">
   <div id="filteroverlaypage" class="popup-overlay" style="display:none">
     <div class="filter1">
-      <div>
+      <div id="exit">
             <img class="exit" alt="" src="exit.svg">
       </div>
       <div>
             <img class="clear" alt="" src="filterclear.svg">
-            <img class="confirm" alt="" src="filterconfirm.svg">
+            <img id="confirm1" class="confirm1" alt="" src="filterconfirm.svg">
       </div>
       <div class="textarea1">
             <input type="text" placeholder="">
@@ -179,16 +182,32 @@
             <img class="filteroverlay" alt="" src="filteroverlay.svg">
       </div>
       <div class="gradelist" id="allgrade">
-            <div class="gradelist1">
-             <h><img src="m.1off.svg" alt="grade" id="m.1" onclick="switchimage('m.1on.svg')"></h>
-             <h><img src="m.3off.svg" alt="grade" id="m.3" onclick="switchimage('m.3on.svg')"></h>
-             <h><img src="m.5off.svg" alt="grade" id="m.5" onclick="switchimage('m.5on.svg')"></h>
-            </div>
-            <div class="gradelist2">
-             <h><img src="m.2off.svg" alt="grade" id="m.2" onclick="switchimage('m.2on.svg')"></h>
-             <h><img src="m.4off.svg" alt="grade" id="m.4" onclick="switchimage('m.4on.svg')"></h>
-             <h><img src="m.6off.svg" alt="grade" id="m.6" onclick="switchimage('m.6on.svg')"></h>
-            </div>
+            <label class="container">ม.1
+                  <input type="radio" name="radio">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="container">ม.3
+                  <input type="radio" name="radio">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="container">ม.5    
+                  <input type="radio" name="radio">
+                  <span class="checkmark"></span>
+                </label>
+      </div>
+      <div class="gradelist1" id="allgrade">
+            <label class="container">ม.2
+                  <input type="radio" name="radio">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="container">ม.4
+                  <input type="radio" name="radio">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="container">ม.6
+                  <input type="radio" name="radio">
+                  <span class="checkmark"></span>
+                </label>
       </div>
     </div>
  </div>
@@ -281,6 +300,7 @@
       <script src="tosearchpage.js"></script>
       <script src="tophysicbook.js"></script>
       <script src="gradeselect.js"></script>
+      <script src="addbookinfo.js"></script>
 </body>
 </html>
 
