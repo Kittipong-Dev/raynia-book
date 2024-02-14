@@ -14,9 +14,9 @@
         <div class="searchbar">
               <div class="search-bar-wrapper">
                     <div class="search-bar1">
-                          <div class="icon-search-parent">
+                          <div class="icon-search-parent" id="search">
                                 <img class="icon-search" alt="" src="search.svg">
-                                
+                                <img class="searchbar" alt="" src="searchbar.svg">
                                 <div class="search1">search...</div>
                           </div>
                     </div>
@@ -51,7 +51,83 @@
               </div>
               <div class="raynia">Raynia</div>
         </div>
+        <div id="searching" class="popup-overlay" style="display:none">
+
+            <div class="searching">
+                            <div id="exit">
+                              <img class="exit" alt="" src="exit.svg">
+                            </div>
+                            <div class="content" id="info01">
+                              <img class="bar" alt="" src="searchingbar.svg">
+                            </div>
+            </div>
+
+            <div id="searchselect" class="popup-overlay" style="display:none">
+
+                  <div class="searchselect">
+                                  <div id="exit1">
+                                    <img class="exit1" alt="" src="exit.svg">
+                                  </div>
+                                  <div class="content" id="info02">
+                                    <img class="select" alt="" src="searchselect.svg">
+                                    <img class="re1" alt="" src="searchingresult1.svg">
+                                  </div>
+                  </div>
+
+
+      </div>
   </div>
+  <script>
+      var search = document.getElementById("search");
+      var searching = document.getElementById("searching");
+      var searchselect = document.getElementById("searchselect");
+      var exit = document.getElementById("exit");
+      var exit1 = document.getElementById("exit1");
+
+      if (search && searching) {
+    search.addEventListener("click", function (e) {
+        searching.style.display = "flex";
+    });
+      }
+      if (searchselect && searching) {
+    searching.addEventListener("click", function (e) {
+        searchselect.style.display = "flex";
+    });
+      }
+      if (exit && searching) {
+        exit.addEventListener("click", function (e) {
+            searching.style.display = "none";
+          }  );
+          if (exit1 && searchselect && searching) {
+        exit1.addEventListener("click", function (e) {
+            searchselect.style.display = "none";
+          }  );
+          }
+      searchselect.addEventListener("click", function (e) {
+        if (e.target === searchselect) {
+            searchselect.style.display = "none";
+        }
+    });
+    window.transitionToPage = function(href) {
+    document.querySelector('body').style.opacity = 0
+    window.location.href = href
+}
+
+document.addEventListener('DOMContentLoaded', function(event) {
+    document.querySelector('body').style.opacity = 1
+})
+
+var info02 = document.getElementById("info02");
+    		if(info02) {
+      			info02.addEventListener("click", function (event) {
+                    event.preventDefault(); // Prevent the default link behavior
+    window.transitionToPage('searchresult1.html');
+      			});
+    		}
+
+
+    }
+  </script>
   <script src="tohomepage.js"></script>
   <script src="tosignin_signuppage.js"></script>
 </body>
