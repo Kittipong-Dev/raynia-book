@@ -577,7 +577,24 @@
                       <b class="b3">รายละเอียดที่มาของคะแนน</b>
             </div>
       </div>
+<script>
+      window.transitionToPage = function(href) {
+    document.querySelector('body').style.opacity = 0
+    window.location.href = href
+}
 
+document.addEventListener('DOMContentLoaded', function(event) {
+    document.querySelector('body').style.opacity = 1
+})
+
+var publisheradd = document.getElementById("publisheradd");
+    		if(publisheradd) {
+                  publisheradd.addEventListener("click", function (event) {
+                    event.preventDefault(); // Prevent the default link behavior
+    window.transitionToPage('publisheraddbook.html');
+      			});
+    		}
+</script>
       <script src="transition10.js"></script>
       <script src="info.js "></script>
       <script src="tosignin_signuppage.js"></script>

@@ -1,0 +1,742 @@
+.bg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: #f4f4f4;
+}
+.b {
+    position: relative;
+    letter-spacing: 0.02em;
+    line-height: 30px;
+}
+.div {
+    position: absolute;
+    top: 6px;
+    left: 0px;
+    letter-spacing: 0.02em;
+}
+.book-name-child {
+    position: absolute;
+    top: 0px;
+    left: 116px;
+    border-radius: 8px;
+    border: 1px solid #6b2dbc;
+    box-sizing: border-box;
+    width: 213px;
+    height: 34px;
+}
+.book-name {
+    width: 329px;
+    position: relative;
+    height: 34px;
+}
+.div4 {
+    position: absolute;
+    top: 6px;
+    left: 0px;
+    font-size: 18px;
+    letter-spacing: 0.02em;
+    color: #252525;
+}
+.min {
+    position: absolute;
+    top: 45px;
+    left: 27px;
+    font-size: 18px;
+    letter-spacing: 0.02em;
+    color: #252525;
+}
+.max {
+    position: absolute;
+    top: 96px;
+    left: 27px;
+    font-size: 18px;
+    letter-spacing: 0.02em;
+    color: #252525;
+}
+.grade-child {
+    position: absolute;
+    top: 39px;
+    left: 116px;
+    border-radius: 8px;
+    border: 1px solid #6b2dbc;
+    box-sizing: border-box;
+    width: 100px;
+    height: 34px;
+}
+.grade-item {
+    position: absolute;
+    top: 39px;
+    left: 229px;
+    border-radius: 8px;
+    border: 1px solid #6b2dbc;
+    box-sizing: border-box;
+    width: 100px;
+    height: 34px;
+}
+.div5 {
+    position: absolute;
+    top: 48px;
+    left: 135px;
+    letter-spacing: 0.02em;
+}
+.div6 {
+    position: absolute;
+    top: 48px;
+    left: 249px;
+    letter-spacing: 0.02em;
+}
+.grade-inner {
+    position: absolute;
+    top: 90px;
+    left: 116px;
+    border-radius: 8px;
+    border: 1px solid #6b2dbc;
+    box-sizing: border-box;
+    width: 100px;
+    height: 34px;
+}
+.rectangle-div {
+    position: absolute;
+    top: 90px;
+    left: 229px;
+    border-radius: 8px;
+    border: 1px solid #6b2dbc;
+    box-sizing: border-box;
+    width: 100px;
+    height: 34px;
+}
+.div7 {
+    position: absolute;
+    top: 99px;
+    left: 135px;
+    letter-spacing: 0.02em;
+}
+.div8 {
+    position: absolute;
+    top: 99px;
+    left: 249px;
+    letter-spacing: 0.02em;
+}
+.grade {
+    width: 329px;
+    position: relative;
+    height: 136px;
+    font-size: 14px;
+    color: #b4b4b4;
+}
+.book-img-child {
+    position: absolute;
+    top: 0px;
+    left: 139px;
+    border-radius: 8px;
+    background-color: #e8e0f2;
+    border: 1px solid #6b2dbc;
+    box-sizing: border-box;
+    width: 169px;
+    height: 34px;
+}
+.upload-file {
+    position: absolute;
+    top: 9px;
+    left: 188px;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: #6b2dbc;
+}
+.div11 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-size: 18px;
+    letter-spacing: 0.02em;
+}
+.div12 {
+    position: absolute;
+    top: 11.11%;
+    left: 29.69%;
+    letter-spacing: 0.02em;
+}
+.group-child {
+    position: absolute;
+    height: 100%;
+    width: 21.09%;
+    top: 0%;
+    right: 78.91%;
+    bottom: 0%;
+    left: 0%;
+    border-radius: 50%;
+    border: 1px solid #6b2dbc;
+    box-sizing: border-box;
+}
+.group {
+    position: absolute;
+    height: 22.88%;
+    width: 41.69%;
+    top: 36.44%;
+    right: 51.14%;
+    bottom: 40.68%;
+    left: 7.17%;
+}
+.div13 {
+    position: absolute;
+    top: 11.11%;
+    left: 31.67%;
+    letter-spacing: 0.02em;
+}
+.group-item {
+    position: absolute;
+    height: 100%;
+    width: 22.5%;
+    top: 0%;
+    right: 77.5%;
+    bottom: 0%;
+    left: 0%;
+    border-radius: 50%;
+    border: 1px solid #6b2dbc;
+    box-sizing: border-box;
+}
+.container {
+    position: absolute;
+    height: 22.88%;
+    width: 39.09%;
+    top: 36.44%;
+    right: 0%;
+    bottom: 40.68%;
+    left: 60.91%;
+}
+.div14 {
+    position: absolute;
+    top: 11.11%;
+    left: 21.59%;
+    letter-spacing: 0.02em;
+}
+.group-inner {
+    position: absolute;
+    height: 100%;
+    width: 15.34%;
+    top: 0%;
+    right: 84.66%;
+    bottom: 0%;
+    left: 0%;
+    border-radius: 50%;
+    border: 1px solid #6b2dbc;
+    box-sizing: border-box;
+}
+.group-div {
+    position: absolute;
+    height: 22.88%;
+    width: 57.33%;
+    top: 77.12%;
+    right: 35.5%;
+    bottom: 0%;
+    left: 7.17%;
+}
+.book-type {
+    width: 307px;
+    position: relative;
+    height: 118px;
+    font-size: 16px;
+}
+.div15 {
+    position: relative;
+    letter-spacing: 0.02em;
+}
+.group-child1 {
+    position: absolute;
+    top: 0px;
+    left: 63px;
+    border-radius: 8px;
+    border: 1px solid #6b2dbc;
+    box-sizing: border-box;
+    width: 85px;
+    height: 34px;
+}
+.group-child2 {
+    position: absolute;
+    top: 0px;
+    left: 185px;
+    border-radius: 8px;
+    border: 1px solid #6b2dbc;
+    box-sizing: border-box;
+    width: 84px;
+    height: 34px;
+}
+.div16 {
+    position: absolute;
+    top: 6px;
+    left: 0px;
+    letter-spacing: 0.02em;
+    color: #252525;
+    display: inline-block;
+    width: 49.02px;
+}
+.div17 {
+    position: absolute;
+    top: 9px;
+    left: 90px;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    display: inline-block;
+    width: 31px;
+}
+.div18 {
+    position: absolute;
+    top: 9px;
+    left: 215px;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    display: inline-block;
+    width: 23px;
+}
+.x {
+    position: absolute;
+    top: 6px;
+    left: 161px;
+    letter-spacing: 0.02em;
+    color: #000;
+    display: inline-block;
+    width: 10px;
+}
+.cm {
+    position: absolute;
+    top: 6px;
+    left: 297.23px;
+    letter-spacing: 0.02em;
+    color: #000;
+    text-align: right;
+}
+.rectangle-parent {
+    width: 328.23px;
+    position: relative;
+    height: 34px;
+    color: #b4b4b4;
+}
+.group-child3 {
+    position: absolute;
+    top: 0px;
+    left: 92px;
+    border-radius: 8px;
+    border: 1px solid #6b2dbc;
+    box-sizing: border-box;
+    width: 177px;
+    height: 34px;
+}
+.kg {
+    position: absolute;
+    top: 6px;
+    left: 303.23px;
+    letter-spacing: 0.02em;
+    color: #000;
+    text-align: right;
+}
+.rectangle-group {
+    width: 328.23px;
+    position: relative;
+    height: 34px;
+}
+.div21 {
+    position: absolute;
+    top: 11.11%;
+    left: 0%;
+    letter-spacing: 0.02em;
+}
+.div22 {
+    position: absolute;
+    top: 16.13%;
+    left: 50%;
+    letter-spacing: 0.02em;
+}
+.check-list-child {
+    position: absolute;
+    top: 6px;
+    left: 5px;
+    border-radius: 2px;
+    border: 1px solid #6b2dbc;
+    box-sizing: border-box;
+    width: 20px;
+    height: 20px;
+}
+.check-list {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 31px;
+    height: 31px;
+}
+.parent1 {
+    position: absolute;
+    height: 114.81%;
+    width: 25.72%;
+    top: -7.41%;
+    right: 37.62%;
+    bottom: -7.41%;
+    left: 36.66%;
+}
+.div23 {
+    position: absolute;
+    top: 16.13%;
+    left: 47.62%;
+    letter-spacing: 0.02em;
+}
+.parent2 {
+    position: absolute;
+    height: 114.81%;
+    width: 27.01%;
+    top: -7.41%;
+    right: 0%;
+    bottom: -7.41%;
+    left: 72.99%;
+}
+.thread-sewing {
+    width: 311px;
+    position: relative;
+    height: 27px;
+}
+.group-child5 {
+    position: absolute;
+    top: 0px;
+    left: 154px;
+    border-radius: 8px;
+    border: 1px solid #6b2dbc;
+    box-sizing: border-box;
+    width: 115px;
+    height: 34px;
+}
+.gram {
+    position: absolute;
+    top: 6px;
+    left: 283.23px;
+    letter-spacing: 0.02em;
+    color: #000;
+    text-align: right;
+}
+.div26 {
+    position: absolute;
+    top: 11.11%;
+    left: 39.18%;
+    letter-spacing: 0.02em;
+}
+.ellipse-div {
+    position: absolute;
+    height: 100%;
+    width: 27.84%;
+    top: 0%;
+    right: 72.16%;
+    bottom: 0%;
+    left: 0%;
+    border-radius: 50%;
+    border: 1px solid #6b2dbc;
+    box-sizing: border-box;
+}
+.parent3 {
+    position: absolute;
+    height: 100%;
+    width: 31.19%;
+    top: 0%;
+    right: 42.77%;
+    bottom: 0%;
+    left: 26.05%;
+}
+.div27 {
+    position: absolute;
+    top: 11.11%;
+    left: 38.78%;
+    letter-spacing: 0.02em;
+}
+.group-child7 {
+    position: absolute;
+    height: 100%;
+    width: 27.55%;
+    top: 0%;
+    right: 72.45%;
+    bottom: 0%;
+    left: 0%;
+    border-radius: 50%;
+    border: 1px solid #6b2dbc;
+    box-sizing: border-box;
+}
+.parent4 {
+    position: absolute;
+    height: 100%;
+    width: 31.51%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    left: 68.49%;
+}
+.px {
+    position: absolute;
+    top: 6px;
+    left: 304.23px;
+    letter-spacing: 0.02em;
+    color: #000;
+    text-align: right;
+}
+.div28 {
+    position: absolute;
+    top: 3px;
+    left: 0px;
+    letter-spacing: 0.02em;
+}
+.div29 {
+    position: absolute;
+    top: 3px;
+    left: 38px;
+    letter-spacing: 0.02em;
+}
+.group-child9 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 50%;
+    border: 1px solid #6b2dbc;
+    box-sizing: border-box;
+    width: 27px;
+    height: 27px;
+}
+.parent5 {
+    position: absolute;
+    top: 0px;
+    left: 116px;
+    width: 132px;
+    height: 27px;
+}
+.parent6 {
+    position: absolute;
+    top: 42px;
+    left: 116px;
+    width: 149px;
+    height: 27px;
+}
+.paper {
+    width: 311px;
+    position: relative;
+    height: 69px;
+}
+.div32 {
+    position: absolute;
+    top: 11.11%;
+    left: 37.62%;
+    letter-spacing: 0.02em;
+}
+.group-child11 {
+    position: absolute;
+    height: 100%;
+    width: 26.73%;
+    top: 0%;
+    right: 73.27%;
+    bottom: 0%;
+    left: 0%;
+    border-radius: 50%;
+    border: 1px solid #6b2dbc;
+    box-sizing: border-box;
+}
+.parent7 {
+    position: absolute;
+    height: 100%;
+    width: 32.48%;
+    top: 0%;
+    right: 30.23%;
+    bottom: 0%;
+    left: 37.3%;
+}
+.div33 {
+    position: absolute;
+    top: 11.11%;
+    left: 77.55%;
+    letter-spacing: 0.02em;
+}
+.group-child12 {
+    position: absolute;
+    height: 100%;
+    width: 55.1%;
+    top: 0%;
+    right: 44.9%;
+    bottom: 0%;
+    left: 0%;
+    border-radius: 50%;
+    border: 1px solid #6b2dbc;
+    box-sizing: border-box;
+}
+.parent8 {
+    position: absolute;
+    height: 100%;
+    width: 15.76%;
+    top: 0%;
+    right: 3.54%;
+    bottom: 0%;
+    left: 80.71%;
+}
+.parent9 {
+    position: absolute;
+    top: 0px;
+    left: 132px;
+    width: 184px;
+    height: 27px;
+}
+.parent10 {
+    position: absolute;
+    top: 42px;
+    left: 132px;
+    width: 202px;
+    height: 27px;
+}
+.line-spacing {
+    width: 334px;
+    position: relative;
+    height: 69px;
+}
+.group-child15 {
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    border-radius: 8px;
+    border: 1px solid #6b2dbc;
+    box-sizing: border-box;
+    width: 328px;
+    height: 94px;
+}
+.div37 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    letter-spacing: 0.02em;
+    display: inline-block;
+    width: 174.36px;
+}
+.rectangle-parent4 {
+    width: 328px;
+    position: relative;
+    height: 134px;
+}
+.group-child16 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 22.5px;
+    background-color: #ab80e3;
+    border: 2px solid #ab80e3;
+    box-sizing: border-box;
+    width: 192px;
+    height: 45px;
+}
+.submit {
+    position: absolute;
+    top: 11px;
+    left: calc(50% - 36.5px);
+    letter-spacing: 0.03em;
+    font-weight: 600;
+}
+.rectangle-parent5 {
+    position: absolute;
+    top: 0px;
+    left: 72px;
+    width: 192px;
+    height: 45px;
+}
+.add-book-inner {
+    width: 334px;
+    position: relative;
+    height: 112px;
+    text-align: center;
+    font-size: 20px;
+    color: #f4f4f4;
+    font-family: Inter;
+}
+.add-book1 {
+    height: 1631px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 23px;
+    font-size: 18px;
+    color: #252525;
+    font-family: Karla;
+}
+.parent {
+    position: absolute;
+    top: 141px;
+    left: 47px;
+    height: 1696px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 35px;
+}
+.scrolling {
+    position: absolute;
+    top: 24px;
+    left: 10px;
+    width: 430px;
+    height: 793px;
+    overflow-y: auto;
+}
+.menu-bar-icon {
+    position: absolute;
+    bottom: 0px;
+    left: calc(50% - 215px);
+    width: 430px;
+    height: 130px;
+}
+.header-child {
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    right: 0px;
+    left: calc(40%);
+    background-color: rgba(238, 238, 238, 0.95);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(20px);
+    height: 121px;
+}
+.raynia {
+    position: absolute;
+    top: 70px;
+    left: calc(90% - 55px);
+    letter-spacing: 0.12em;
+    font-weight: 500;
+}
+.vector-icon {
+    position: absolute;
+    top: 12px;
+    left: calc(50% - 100px);
+    width: 98px;
+    height: 106px;
+}
+.vector-parent {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 104px;
+    height: 121px;
+}
+.header {
+    position: absolute;
+    top: 0px;
+    left: calc(-40%);
+    width: 100%;
+    height: 121px;
+    font-size: 27px;
+    color: #6b2dbc;
+    font-family: Karla;
+}
+.add-book {
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    height: 932px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 24px;
+    color: #6b2dbc;
+    font-family: Inter;
+}
+
