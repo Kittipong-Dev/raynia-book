@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="searchresult1.css" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karla:wght@500;700&display=swap" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+    <title>searchreult1</title>
+</head>
+<body>
+    <div class="search-result-1">
+        <div class="search-bar">
+              <div class="search-bar-parent">
+                    <div class="search-bar1">
+                          <div class="icon-search-wrapper">
+                                <img class="icon-search" alt="" src="search.svg">
+                                
+                          </div>
+                    </div>
+                    <div class="search-result-11">search result 1</div>
+              </div>
+              <div class="search-result">
+                    <div class="search-bar2">
+                          <div class="search-result-1-wrapper">
+                                <div class="search-result-12">search result 1</div>
+                          </div>
+                    </div>
+                    <div class="search-bar3">
+                          <div class="search-result-1-wrapper">
+                                <div class="search-result-12">search result 2</div>
+                          </div>
+                    </div>
+                    <div class="search-bar2">
+                          <div class="search-result-1-wrapper">
+                                <div class="search-result-12">search result 3</div>
+                          </div>
+                    </div>
+              </div>
+        </div>
+        <div class="scrolling">
+              <div class="search-result-13">
+                    <div class="book-ex1-parent">
+                          <div class="book-ex1">
+                                <div class="content-1">
+                                      <img class="book-img-icon" alt="" src="randombook.svg">
+                                      
+                                      <div class="info">
+                                            <div class="div">ระดับชั้น: ม.5</div>
+                                            <div class="xxxx">xxxx</div>
+                                            <div class="div1">450.-</div>
+                                            <div class="div2">หนังสือเนื้อหา - โจทย์</div>
+                                      </div>
+                                </div>
+                                <img class="book-ex1-child" alt="" src="yellowbluesign.svg">
+                                
+                          </div>
+                          <div class="book-ex11" id="bookEx1Container1">
+                                <div class="content-1">
+                                      <img class="book-img-icon1" alt="" src="biobook.svg">
+                                      
+                                      <div class="info">
+                                            <div class="div">ระดับชั้น: ม.4</div>
+                                            <div class="xxxx">Biology ชีววิทยา</div>
+                                            <div class="div1">590.-</div>
+                                            <div class="div2">หนังสือเนื้อหา</div>
+                                      </div>
+                                </div>
+                                <img class="book-ex1-child" alt="" src="bluesign.svg">
+                                
+                          </div>
+                          <div class="book-ex1">
+                                <div class="content-1">
+                                      <img class="book-img-icon" alt="" src="randombook.svg">
+                                      
+                                      <div class="info">
+                                            <div class="div">ระดับชั้น: ม.6</div>
+                                            <div class="xxxx">abcd</div>
+                                            <div class="div1">490.-</div>
+                                            <div class="div2">หนังสือเนื้อหา</div>
+                                      </div>
+                                </div>
+                                <img class="book-ex1-child" alt="" src="bluesign.svg">
+                          </div>
+                          <div class="book-ex1">
+                                <div class="content-1">
+                                      <img class="book-img-icon" alt="" src="randombook.svg">
+                                      
+                                      <div class="info">
+                                            <div class="div">ระดับชั้น: ม.4</div>
+                                            <div class="xxxx">oooo</div>
+                                            <div class="div1">390.-</div>
+                                            <div class="div2">หนังสือเนื้อหา</div>
+                                      </div>
+                                </div>
+                                <img class="book-ex1-child" alt="" src="bluesign.svg">
+                          </div>
+                    </div>
+              </div>
+        </div>
+        <div class="usermenu" id="touser">
+            <img class="home" alt="" src="homeIcon.svg">
+        </div>
+        <div class="homemenu" id="tohomepage">
+            <img class="home" alt="" src="homeIcon.svg">
+        </div>
+        <img class="menu-bar-icon" alt="" src="search menu bar.svg">
+        
+        <img class="filter-icon" alt="" src="filter.svg">
+        
+        <div class="bgsort">
+            <div class="sort" id="sortdefault">
+                  <div class="sorting"><span class="main-sort">Sort by Default</span><img class="sortex" alt="" src="sort.svg" id="defaultmain"></div>
+                  <div class="dropdown-content">
+                        <li class="sortlist">
+                              <div class="sort-child">Sort by Default <input type="radio" name="price" class="price" value="Sort by Default"></div>
+                              <div class="sort-child">Sort by Price: low to high <input type="radio" name="price" class="price" value="Sort by Price: low to high"></div>
+                              <div class="sort-child">Sort by Price: high to low <input type="radio" name="price" class="price" value="Sort by Price: high to low"></div>
+                        </li>
+                        <div class="bgdropdown"></div>
+                  </div>
+            </div>
+
+
+            <div class="explore-books">Explore books</div>
+      </div>
+        <div class="header">
+              <div class="header-child">
+              </div>
+              <div class="raynia">Raynia</div>
+              <div class="vector-parent" id="groupContainer">
+                    <img class="vector-icon" alt="" src="back.svg">
+                    
+                    <div class="group-child">
+                    </div>
+              </div>
+              <img class="information-icon" alt="" src="information.svg" id="information">
+              
+        </div>
+  </div>
+  
+  
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+    var sortdefault = document.querySelector('.sorting');
+    var dropdownContent = document.querySelector('.dropdown-content');
+    let mainSortDOM = document.querySelector('.main-sort');
+
+    sortdefault.addEventListener('click', function () {
+        // Toggle the visibility of the dropdown content
+        dropdownContent.style.display = (dropdownContent.style.display === 'block') ? 'none' : 'block';
+        let onSortDOM = document.querySelector('input[name="price"]:checked');
+        mainSortDOM.innerHTML = onSortDOM.value
+    });
+});
+
+        window.transitionToPage = function(href) {
+    document.querySelector('body').style.opacity = 0
+    window.location.href = href
+}
+
+document.addEventListener('DOMContentLoaded', function(event) {
+    document.querySelector('body').style.opacity = 1
+})
+
+var bookEx1Container1 = document.getElementById("bookEx1Container1");
+    		if(bookEx1Container1) {
+      			bookEx1Container1.addEventListener("click", function (event) {
+                    event.preventDefault(); // Prevent the default link behavior
+    window.transitionToPage('biobook copy.html');
+      			});
+    		}
+</script>
+
+<script src="tohomepage.js"></script>
+  <script src="tosignin_signuppage.js"></script>
+</body>
+</html>
