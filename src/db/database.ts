@@ -1,3 +1,4 @@
+import waitPort from "wait-port";
 import { Sequelize } from "sequelize";
 import config from "../config";
 
@@ -6,11 +7,20 @@ export const sequelize = new Sequelize(config.database.name, config.database.use
     dialect: 'mysql'
 });
 
-export function dbConnect(): Promise<void> {
-    return sequelize.authenticate().then((): void => {
+export async function dbConnect(): Promise<void> {
+    try {
+        await waitPort({ 
+            host: config.database.host, 
+            port: 3306,
+            timeout: 10000,
+            waitForDns: true,
+        })
+
+        await sequelize.authenticate()
         console.log("Database Authorized")
-    }).catch((error): void => {
+    }
+    catch (error) {
         console.error("Database Falied: ", error)
         process.exit(1)
-    })
+    }
 }
